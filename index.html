@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hub Claude — Jogos do KT3746</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #12141a;
+    --bg-glow: #1a2030;
+    --panel: #1a1e26;
+    --panel-hover: #212632;
+    --border: #2a3040;
+    --border-hover: #5b7fff;
+    --ink: #eef0f4;
+    --ink-dim: #9aa3b5;
+    --ink-faint: #6b7386;
+    --accent: #6f8dff;
+    --accent-soft: rgba(111, 141, 255, 0.14);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background:
+      radial-gradient(900px 500px at 50% -10%, var(--bg-glow) 0%, var(--bg) 60%);
+    color: var(--ink);
+  }
+  main {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 4rem;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 2.75rem;
+  }
+  .kicker {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid rgba(111, 141, 255, 0.35);
+    border-radius: 999px;
+    padding: 0.3rem 0.85rem;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    margin: 0 0 0.6rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    letter-spacing: -0.01em;
+  }
+  p.lead {
+    color: var(--ink-dim);
+    margin: 0 auto;
+    max-width: 34rem;
+    line-height: 1.5;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+    gap: 1.1rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.4rem 1.4rem 1.2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover, .card:focus-visible {
+    border-color: var(--border-hover);
+    background: var(--panel-hover);
+    transform: translateY(-2px);
+  }
+  .emoji {
+    font-size: 1.9rem;
+    line-height: 1;
+  }
+  .card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .card p {
+    margin: 0;
+    color: var(--ink-dim);
+    font-size: 0.92rem;
+    line-height: 1.45;
+    flex-grow: 1;
+  }
+  .tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 0.72rem;
+    color: var(--ink-faint);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+  }
+  .play {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+  }
+  footer a { color: var(--ink-dim); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="kicker">Hub Claude</span>
+    <h1>Jogos do KT3746 feitos com Claude</h1>
+    <p class="lead">Cada jogo é um repositório próprio, construído em sessões
+      com o Claude Code — HTML5 Canvas, sem build e sem instalar nada.
+      Clique num card para jogar direto no navegador.</p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="https://kt3746.github.io/Claude-Tower-Defense/" target="_blank" rel="noopener">
+      <span class="emoji">🏰</span>
+      <h2>Muralha</h2>
+      <p>Tower defense medieval: torres de arqueiro, canhão e mago contra
+        ondas de trasgos, orcs e um chefe de guerra.</p>
+      <div class="tags"><span class="tag">Tower defense</span><span class="tag">Canvas</span></div>
+      <span class="play">Jogar →</span>
+    </a>
+
+    <a class="card" href="https://kt3746.github.io/Claude-Arqueiro/" target="_blank" rel="noopener">
+      <span class="emoji">🏹</span>
+      <h2>Arqueiro</h2>
+      <p>Arco e flecha em HTML5 Canvas: mire, leia o vento e acerte o X.
+        Roda liso no computador e no celular.</p>
+      <div class="tags"><span class="tag">Precisão</span><span class="tag">Canvas</span></div>
+      <span class="play">Jogar →</span>
+    </a>
+
+    <a class="card" href="https://kt3746.github.io/Claude-Worms/" target="_blank" rel="noopener">
+      <span class="emoji">🪱</span>
+      <h2>Minhocas</h2>
+      <p>Artilharia por turnos ao estilo <em>Worms</em>: 14 armas, da
+        bazuca à corda ninja, num cenário que se destrói a cada tiro.</p>
+      <div class="tags"><span class="tag">Artilharia</span><span class="tag">Turnos</span></div>
+      <span class="play">Jogar →</span>
+    </a>
+
+    <a class="card" href="https://kt3746.github.io/Claude-Campo-Minado/" target="_blank" rel="noopener">
+      <span class="emoji">💣</span>
+      <h2>Campo Minado</h2>
+      <p>O clássico Campo Minado, completo e sem dependências. Abre em
+        qualquer navegador moderno e roda offline.</p>
+      <div class="tags"><span class="tag">Clássico</span><span class="tag">Puzzle</span></div>
+      <span class="play">Jogar →</span>
+    </a>
+  </div>
+
+  <footer>
+    Feito com <a href="https://claude.ai/code" target="_blank" rel="noopener">Claude Code</a> ·
+    código-fonte de cada jogo no perfil <a href="https://github.com/KT3746" target="_blank" rel="noopener">github.com/KT3746</a>
+  </footer>
+</main>
+</body>
+</html>
