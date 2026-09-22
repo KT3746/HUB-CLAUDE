@@ -130,8 +130,9 @@
     <span class="kicker">Hub Claude</span>
     <h1>Jogos do KT3746 feitos com Claude</h1>
     <p class="lead">Cada jogo é um repositório próprio, construído em sessões
-      com o Claude Code — HTML5 Canvas, sem build e sem instalar nada.
-      Clique num card para jogar direto no navegador.</p>
+      com o Claude Code. A maioria roda direto no navegador, sem instalar
+      nada — clique num card pra jogar (os marcados "Requer instalar" levam
+      pro código-fonte).</p>
   </header>
 
   <div class="grid" id="grid"></div>
@@ -143,7 +144,9 @@
 </main>
 
 <script>
-  // Um novo jogo = uma nova entrada aqui. `repo` vira a URL do GitHub Pages.
+  // Um novo jogo = uma nova entrada aqui. `repo` vira a URL do GitHub Pages,
+  // a menos que `playable: false` — aí o card linka pro código-fonte, porque
+  // o jogo não roda direto no navegador (ex: precisa do Godot instalado).
   const GAMES = [
     {
       repo: "Claude-Tower-Defense",
@@ -158,6 +161,14 @@
       title: "Arqueiro",
       desc: "Arco e flecha em HTML5 Canvas: mire, leia o vento e acerte o X. Roda liso no computador e no celular.",
       tags: ["Precisão", "Canvas"],
+    },
+    {
+      repo: "Claude-Arqueiro-2",
+      emoji: "🏟️",
+      title: "Arqueiro — Primeira Pessoa",
+      desc: "Refeito do zero em Godot 4.3: mire em 3D, sinta o peso do arco e sobreviva a ondas de espectros nas ruínas.",
+      tags: ["Godot", "3D", "Requer instalar"],
+      playable: false,
     },
     {
       repo: "Claude-Worms",
@@ -177,9 +188,12 @@
 
   const grid = document.getElementById("grid");
   for (const game of GAMES) {
+    const playable = game.playable !== false;
     const card = document.createElement("a");
     card.className = "card";
-    card.href = `https://kt3746.github.io/${game.repo}/`;
+    card.href = playable
+      ? `https://kt3746.github.io/${game.repo}/`
+      : `https://github.com/KT3746/${game.repo}`;
     card.target = "_blank";
     card.rel = "noopener";
     card.innerHTML = `
@@ -187,7 +201,7 @@
       <h2>${game.title}</h2>
       <p>${game.desc}</p>
       <div class="tags">${game.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
-      <span class="play">Jogar →</span>
+      <span class="play">${playable ? "Jogar →" : "Ver código →"}</span>
     `;
     grid.appendChild(card);
   }

@@ -11,13 +11,15 @@ repositório com GitHub Pages.
 | --- | --- | --- | --- |
 | 🏰 Muralha | Tower defense medieval | [Claude-Tower-Defense](https://github.com/KT3746/Claude-Tower-Defense) | [kt3746.github.io/Claude-Tower-Defense](https://kt3746.github.io/Claude-Tower-Defense/) |
 | 🏹 Arqueiro | Arco e flecha, mire e acerte o X | [Claude-Arqueiro](https://github.com/KT3746/Claude-Arqueiro) | [kt3746.github.io/Claude-Arqueiro](https://kt3746.github.io/Claude-Arqueiro/) |
+| 🏟️ Arqueiro — Primeira Pessoa | Refeito em Godot 4.3, mira em 3D | [Claude-Arqueiro-2](https://github.com/KT3746/Claude-Arqueiro-2) | requer Godot instalado, sem versão web |
 | 🪱 Minhocas | Artilharia por turnos estilo Worms | [Claude-Worms](https://github.com/KT3746/Claude-Worms) | [kt3746.github.io/Claude-Worms](https://kt3746.github.io/Claude-Worms/) |
 | 💣 Campo Minado | O clássico, sem dependências | [Claude-Campo-Minado](https://github.com/KT3746/Claude-Campo-Minado) | [kt3746.github.io/Claude-Campo-Minado](https://kt3746.github.io/Claude-Campo-Minado/) |
 
 Critério de inclusão: repositórios do KT3746 cujos commits carregam o rodapé
 `Co-Authored-By: Claude`, ou seja, jogos construídos com o Claude Code — os
-repositórios com prefixo `Grok-` (feitos com outra IA) e o rascunho privado
-duplicado `Claude-Campo-Minaso` ficaram de fora.
+repositórios com prefixo `Grok-`/`grokbot-` e `Chatgpt-` (feitos com outra IA),
+o rascunho privado duplicado `Claude-Campo-Minaso` e `Claude-Tower-Defense-2`
+(repo vazio, só o "Initial commit" automático do GitHub) ficaram de fora.
 
 ## Como rodar localmente
 
