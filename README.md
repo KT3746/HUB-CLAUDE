@@ -13,6 +13,8 @@ repositório com GitHub Pages.
 | 🏹 Arqueiro | Arco e flecha, mire e acerte o X | [Claude-Arqueiro](https://github.com/KT3746/Claude-Arqueiro) | [kt3746.github.io/Claude-Arqueiro](https://kt3746.github.io/Claude-Arqueiro/) |
 | 🪱 Minhocas | Artilharia por turnos estilo Worms | [Claude-Worms](https://github.com/KT3746/Claude-Worms) | [kt3746.github.io/Claude-Worms](https://kt3746.github.io/Claude-Worms/) |
 | 💣 Campo Minado | O clássico, sem dependências | [Claude-Campo-Minado](https://github.com/KT3746/Claude-Campo-Minado) | [kt3746.github.io/Claude-Campo-Minado](https://kt3746.github.io/Claude-Campo-Minado/) |
+| 🤠 Poeira Vermelha | Faroeste 3D estilo Red Dead | [Claude---RedDead](https://github.com/KT3746/Claude---RedDead) | [kt3746.github.io/Claude---RedDead/3d](https://kt3746.github.io/Claude---RedDead/3d/) |
+| 🪂 Fenda Boreal | Planador 3D num fiorde | [Claude---para-Testes](https://github.com/KT3746/Claude---para-Testes) | [kt3746.github.io/Claude---para-Testes](https://kt3746.github.io/Claude---para-Testes/) |
 
 Critério de inclusão: repositórios do KT3746 cujos commits carregam o rodapé
 `Co-Authored-By: Claude`, ou seja, jogos construídos com o Claude Code — os
