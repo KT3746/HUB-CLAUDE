@@ -174,7 +174,7 @@
       repo: "Claude-Worms",
       emoji: "🪱",
       title: "Minhocas",
-      desc: "Artilharia por turnos ao estilo Worms: 14 armas, da bazuca à corda ninja, num cenário que se destrói a cada tiro.",
+      desc: "Artilharia por turnos ao estilo Worms: 15 armas, da bazuca à corda ninja, num cenário que se destrói a cada tiro.",
       tags: ["Artilharia", "Turnos"],
     },
     {
@@ -184,6 +184,21 @@
       desc: "O clássico Campo Minado, completo e sem dependências. Abre em qualquer navegador moderno e roda offline.",
       tags: ["Clássico", "Puzzle"],
     },
+    {
+      repo: "Claude---RedDead",
+      path: "3d/",
+      emoji: "🤠",
+      title: "Poeira Vermelha",
+      desc: "Faroeste em 3D inspirado em Red Dead Redemption 2: cavalo, duelos, caçadas de recompensa, a lei no seu encalço e missões até o bando de Dutch Callahan.",
+      tags: ["Faroeste", "3D"],
+    },
+    {
+      repo: "Claude---para-Testes",
+      emoji: "🪂",
+      title: "Fenda Boreal",
+      desc: "Pilote um planador elétrico rente à água de um fiorde ao pôr do sol, passando por portões e desviando de rochas e cabos.",
+      tags: ["Voo", "3D"],
+    },
   ];
 
   const grid = document.getElementById("grid");
@@ -192,7 +207,7 @@
     const card = document.createElement("a");
     card.className = "card";
     card.href = playable
-      ? `https://kt3746.github.io/${game.repo}/`
+      ? `https://kt3746.github.io/${game.repo}/${game.path || ""}`
       : `https://github.com/KT3746/${game.repo}`;
     card.target = "_blank";
     card.rel = "noopener";
